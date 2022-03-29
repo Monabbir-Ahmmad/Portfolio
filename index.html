@@ -51,15 +51,18 @@
 
     <ul id="nav-links">
       <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
       <li><a href="#">Skills</a></li>
       <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
       <li>
         <a href="https://www.facebook.com/monabbir.ahmmad/">
           <img src="https://img.icons8.com/fluency-systems-regular/344/facebook-new--v1.png" alt="facebook">
         </a>
         <a href="https://www.linkedin.com/in/monabbir-ahmmad-tajbir-467144235/">
           <img src="https://img.icons8.com/fluency-systems-regular/344/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://github.com/Monabbir-Ahmmad">
+          <img src="https://img.icons8.com/fluency-systems-regular/344/github.png" alt="github">
         </a>
         <a href="mailto:monabbir.ahmmad@gmail.com">
           <img src="https://img.icons8.com/fluency-systems-regular/344/email-sign.png" alt="linkedin">
@@ -68,7 +71,7 @@
     </ul>
   </nav>
 
-  <div class="intro-container">
+  <div id="intro-container" class="intro-container section">
     <h1 id="typeWriter" class="intro-item"></h1>
     <h1 class="intro-item">
       Software Engineer | Web Developer | App Developer
@@ -77,24 +80,61 @@
     <div id="intro-btn-about" class="intro-item">Learn about me</div>
   </div>
 
-  <div id="about-me">
+  <div id="about-container" class="section dark">
     <h1 class="about-title">About Me</h1>
+
     <div class="about-details-container">
       <div class="about-details-wrapper">
-        <p id="about-me-bio">
+        <div class="about-profile">
+          <h1>Profile</h1>
+
+          <div class="about-profile-item">
+            <h2>Full name</h2>
+            <h3>Monabbir Ahmmad Tajbir</h3>
+          </div>
+
+          <div class="about-profile-item">
+            <h2>Birth date</h2>
+            <h3>December 31, 2000</h3>
+          </div>
+
+          <div class="about-profile-item">
+            <h2>Gender</h2>
+            <h3>Male</h3>
+          </div>
+
+          <div class="about-profile-item">
+            <h2>Language</h2>
+            <h3>Bangle, English</h3>
+          </div>
+
+          <div class="about-profile-item">
+            <h2>Occupation</h2>
+            <h3>Student, Software Engineer</h3>
+          </div>
+
+          <div class="about-profile-item">
+            <h2>Country</h2>
+            <h3>Bangladesh</h3>
+          </div>  
+
+        </div>
+      </div>
+      <div class="about-details-wrapper">
+        <img src="Resourse/MyPic.png" alt="Pic" />
+        <p id="about-bio">
           I'm Monabbir Ahmmad Tajbir, an aspiring Software Engineer from
           Bangladesh. I'm currently pursuing a bachelor's degree in Software
           Engineering at the Institute of Information and Communication
           Technology, Shahjalal University of Science and Technology.
         </p>
       </div>
-      <div class="about-details-wrapper">
-        <img src="Resourse/MyPic.png" alt="Pic" />
-      </div>
     </div>
+
+    <div id="about-btn-skills"><p>Check out my skills</p><h2>⟱</h2></div>
   </div>
 
-    <div id="skills">
+  <div id="skills-container" class="section">
     <h1 class="skills-title">Skills</h1>
     <div class="skills-details-container">
       <div class="skills-details-wrapper">
@@ -103,9 +143,8 @@
     </div>
   </div>
 
-  <script type="module" src="/JS/portfolio.js"></script>
+  <script type="module" src="/JS/index.js"></script>
   <script type="module" src="/JS/navBar.js"></script>
-  <script type="module" src="/JS/intro.js"></script>
   <script type="module" src="/JS/particle.js"></script>
 </body>
 

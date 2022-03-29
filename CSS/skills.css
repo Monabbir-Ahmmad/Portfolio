@@ -1,4 +1,4 @@
-#skills {
+#skills-container {
   padding-top: 15vh;
   width: 100vw;
   min-height: 100vh;
@@ -9,7 +9,6 @@
   gap: 3rem;
   overflow-x: hidden;
   background: white;
-  transition: all 1s ease;
 }
 
 .skills-title {
@@ -21,7 +20,7 @@
   transition: all 1s ease;
 }
 
-#skills.animation .skills-title {
+#skills-container.animation .skills-title {
   transform: scale(1);
   text-transform: uppercase;
 }

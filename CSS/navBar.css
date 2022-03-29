@@ -15,7 +15,7 @@ nav {
   z-index: 2;
 }
 
-nav.nav-active #hamburger .hamburger-line {
+nav.nav-dark #hamburger .hamburger-line {
   background: white;
 }
 
@@ -31,11 +31,11 @@ nav.nav-active #hamburger .hamburger-line {
   transition: all 0.5s ease;
 }
 
-nav.nav-active #logo .cls-1 {
+nav.nav-dark #logo .cls-1 {
   fill: white;
 }
 
-nav.nav-active #hamburger.open .hamburger-line {
+nav.nav-dark #hamburger.open .hamburger-line {
   background: black;
 }
 

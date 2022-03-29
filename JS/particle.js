@@ -20,12 +20,25 @@ const mouse = {
   y: undefined,
 };
 
+function debounce(func, timeout = 500) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, timeout);
+  };
+}
+
 //When window is resized reset canvas
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  init();
-});
+window.addEventListener(
+  "resize",
+  debounce(() => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    init();
+  }, 500)
+);
 
 //Update mouse position on mouse move
 window.addEventListener("mousemove", (event) => {
